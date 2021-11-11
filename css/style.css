@@ -1,0 +1,300 @@
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: rgb(75,106,136);
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: rgb(83,47,97);
+  }
+
+   header{
+    display: block;
+    position: relative;
+    background-image: url('../images/headerpicture.JPG');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 60px;
+    text-align: center;
+    /*background: #1abc9c;*/
+    color: white;
+    font-size: 30px;
+   }
+   .gallery-grid {
+    display: grid;
+    grid-template-columns:auto;
+    grid-gap: 10px;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* The Picture Frame */
+  .gallery-frame {
+    padding: 5px;
+    font-size: 5px;
+    text-align: center;
+    background-color: #333;
+    color: #d9d9d9;
+  }
+  
+  /* The Images */
+  .gallery-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
+  }
+  
+  .gallery-img:hover {
+    opacity: .7;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  .block{
+    display: block;
+    border: 2rem black solid;
+   }
+
+ 
+
+  h1{
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+  }
+
+  h2{
+    font-size: 1.5em;
+    text-align:left;
+    line-height: 2;
+
+    }
+
+   body{
+   margin: 0;
+   padding: 0;
+   font-size: 1.4em; /* test for this! Make all sizes em or rem */
+   background-color: rgb(179,129,179);
+   }
+
+   p {
+    padding: 0 20px;
+    text-align: justify center;
+   }
+   .abouttext{
+     text-align: center;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-top: 30px;
+     margin-bottom: 30px;
+     margin-right: 5px;
+     margin-left: 5px;
+     border: 5px solid white;
+     
+    }
+  .gallerytext{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 55px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 5px solid white;
+  }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 2px;
+    }
+    .column {
+      flex: 33%;
+      padding: 0 2px;
+    }
+    
+    .column img {
+      margin-top: 2px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    /*Recipes Start*/ 
+
+    .recipecontainer{
+ 
+      color: rgb(75,106,136);
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    h3{
+    display: block;
+    padding: 0 20px;
+    justify-content: left;
+    font-size: 1.0em;
+    line-height: 2;
+    }
+
+    
+    .recipe{
+      justify-content: left;
+
+    }
+    .recipe img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      justify-content: center;
+     }
+     .salmonrecipe {
+      background-color: white;
+      border: 10px solid rgb(75,106,136);
+      padding: 20px;
+      grid-column: 1/ span 1;
+    }
+    .salmonrecipe h2{
+      display: block;
+      padding-top: 20;
+      text-align: center;
+      color: rgb(230,87,84);
+    }
+    .salmonrecipe h3{
+      text-align: left;
+      color: rgb(230,87,84);
+    }
+    .salmonrecipe h4{
+      text-align: left;
+      color: #000000;
+    }
+    .chickenrecipe{
+      background-color: white;
+      border: 10px solid rgb(75,106,136);
+      padding: 30px;
+      grid-column: 2/ span 1;
+    }
+    .chickenrecipe h2{
+      display: block;
+      text-align: center;
+      padding-top: 20px;
+      color: rgb(230,87,84);
+    }
+    .chickenrecipe h3{
+      text-align: left;
+      justify-content: center;
+      color: rgb(230,87,84);
+      line-height: 1;
+    }
+    .chickenrecipe h4{
+      text-align: left;
+      color: #000000;
+    }
+    .eggrecipe{
+      background-color: white;
+      border: 10px solid rgb(75,106,136);
+      padding: 30px;
+    }
+    .eggrecipe h2{
+      text-align: center;
+      color: rgb(230,87,84);
+    }
+    .eggrecipe h3{
+      text-align: left;
+      justify-content: center;
+      color: rgb(230,87,84);
+      line-height: 1;
+    }
+    .eggrecipe h4{
+      text-align: left;
+      color: #000000;
+    }
+
+    .shrimprecipe{
+      background-color: white;
+      border: 10px solid rgb(75,106,136); 
+      padding: 30px;
+    }
+    .shrimprecipe h2{
+      text-align: center;
+      color: rgb(230,87,84);
+    }
+    .shrimprecipe h3{
+      text-align: left;
+      justify-content: center;
+      color: rgb(230,87,84);
+      line-height: 1;
+    }
+    .shrimprecipe h4{
+      text-align: left;
+      color: #000000;
+    }
+  
+  /*Recipes End*/ 
+
+  /*Advice Start*/ 
+
+    #adviceheader h2{
+      text-align: center;
+      color: white;
+      font-family: 'Tangerine', cursive;
+      font-size: 30px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+     }
+
+     .advice{
+      color: white;
+      background-color: rgb(75,106,136) ;
+      text-align: left;
+      padding-left: 35px;
+      margin: 20px;
+      border: 2px white solid;
+     }
+      .advice h2{
+        margin-bottom: 5px;
+        margin-top: 15px;
+      }
+  /*Advice End*/ 
+
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
