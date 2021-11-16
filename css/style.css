@@ -108,7 +108,7 @@
   .gallery .item:hover .caption {
     transform: translateY(0%);
   }
-  *{
+  */*{
     box-sizing: border-box;
   }
 
@@ -117,7 +117,7 @@
     border: 2rem black solid;
    }
 
- 
+ */
 
   h1{
     font-size: 2em;
