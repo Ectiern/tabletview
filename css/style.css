@@ -39,16 +39,22 @@
     color: white;
     font-size: 30px;
    }
-   .gallery-grid {
+
+   .gallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+   }
+   /*.gallery{
     display: grid;
     grid-template-columns:auto;
     grid-gap: 10px;
     justify-items: center;
     margin: 0;
     padding: 0;
-  }
+  }*/
   
-  /* The Picture Frame */
+  /* The Picture Frame 
   .gallery-frame {
     padding: 5px;
     font-size: 5px;
@@ -56,19 +62,52 @@
     background-color: #333;
     color: #d9d9d9;
   }
-  
+  */ 
   /* The Images */
-  .gallery-img {
+  /*.gallery-img {
     width: 120px;
     height: 120px;
     object-fit: cover;
     transition: opacity 0.25s ease-in-out;
+  }*/
+
+  /*.gallery-img{
+    width: 100%;
   }
   
   .gallery-img:hover {
     opacity: .7;
   }
-
+  */
+  .gallery .item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gallery .item img {
+    vertical-align: middle;
+  }
+  
+  .gallery .caption {
+    margin: 0;
+    padding: 1em;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    transition: transform .5s;
+    transform: translateY(100%);
+    background: rgba(0, 0, 0, .7);
+    color: rgb(255, 255, 255);
+  }
+  
+  .gallery .item:hover .caption {
+    transform: translateY(0%);
+  }
   *{
     box-sizing: border-box;
   }
