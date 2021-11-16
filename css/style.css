@@ -39,12 +39,12 @@
     color: white;
     font-size: 30px;
    }
-   /*
    .gallery{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
    }
+   
    /*.gallery{
     display: grid;
     grid-template-columns:auto;
