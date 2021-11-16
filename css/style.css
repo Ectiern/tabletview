@@ -91,7 +91,10 @@
   }
 
   .gallery .item img {
-    vertical-align: middle;
+    /*vertical-align: middle;*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   
   .gallery .caption {
