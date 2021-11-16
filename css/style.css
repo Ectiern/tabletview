@@ -39,7 +39,7 @@
     color: white;
     font-size: 30px;
    }
-
+   /*
    .gallery{
     display: grid;
     grid-gap: 10px;
@@ -118,7 +118,7 @@
    }
 
  */
-
+  /*
   h1{
     font-size: 2em;
     text-align: center;
@@ -136,6 +136,7 @@
    margin: 0;
    padding: 0;
    font-size: 1.4em; /* test for this! Make all sizes em or rem */
+   /*
    background-color: rgb(179,129,179);
    }
 
@@ -322,6 +323,7 @@
         margin-top: 15px;
       }
   /*Advice End*/ 
+  
 
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
   @media screen and (max-width: 500px) {
