@@ -133,8 +133,10 @@
     border: 2rem black solid;
    }
 
- 
-  
+  .gallerytextcontainer{
+    display: grid;
+    
+  }
   h1{
     font-size: 2em;
     text-align: center;
@@ -143,7 +145,7 @@
 
   h2{
     font-size: 1.5em;
-    text-align:left;
+    text-align:center;
     line-height: 2;
 
     }
@@ -159,6 +161,7 @@
    p {
     padding: 0 20px;
     text-align: justify center;
+    font-size: 1em;
    }
    .abouttext{
      text-align: center;
@@ -184,6 +187,7 @@
     margin-right: 5px;
     margin-left: 5px;
     border: 5px solid white;
+    background: rgb(169,169,169);
   }
 
     .row {
