@@ -86,9 +86,10 @@
     border-image: none;
     border-style: solid;
     border-width: 10px;
-    height: 200px;
     width: 200px;
+    height: 200px;
   }
+
   
   .gallery-img{
     width: 100%;
