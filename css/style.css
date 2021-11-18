@@ -190,6 +190,13 @@
     background: rgb(169,169,169);
   }
 
+  .aboutmecontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
     .row {
       display: flex;
       flex-wrap: wrap;
