@@ -176,7 +176,7 @@
      border: 5px solid white;
      
     }
-  .gallerytext{
+  .gallerytext, .aboutmecontainer1{
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
