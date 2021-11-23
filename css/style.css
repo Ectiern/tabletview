@@ -248,8 +248,13 @@
     .recipecontainer{
  
       color: rgb(75,106,136);
-      margin-right: 20px;
-      margin-left: 20px;
+      display: grid;
+      align-items: center;
+      grid-row-gap: .5em;
+      grid-column-gap: .5em;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+      
     }
 
     h3{
@@ -260,99 +265,64 @@
     line-height: 2;
     }
 
-    
     .recipe{
       justify-content: left;
 
     }
-    .recipe img{
-      display: block;
+    .recipecontainer img{
+      display: grid;
       margin-left: auto;
       margin-right: auto;
-      width: 100%;
+      width: 12em;
       justify-content: center;
+    
      }
      .salmonrecipe {
+      display: grid;
       background-color: white;
       border: 10px solid rgb(75,106,136);
       padding: 20px;
-      grid-column: 1/ span 1;
+      
     }
-    .salmonrecipe h2{
+    .salmonrecipe, .chickenrecipe, .eggrecipe, .shrimprecipe, h2{
       display: block;
       padding-top: 20;
       text-align: center;
       color: rgb(230,87,84);
     }
-    .salmonrecipe h3{
+    .salmonrecipe, .chickenrecipe, .eggrecipe, .shrimprecipe, h3{
       text-align: left;
       color: rgb(230,87,84);
     }
-    .salmonrecipe h4{
+    .salmonrecipe, .chickenrecipe, .eggrecipe, .shrimprecipe, h4{
       text-align: left;
       color: #000000;
     }
     .chickenrecipe{
+      display: grid;
       background-color: white;
       border: 10px solid rgb(75,106,136);
-      padding: 30px;
-      grid-column: 2/ span 1;
+      padding: 20px;
     }
-    .chickenrecipe h2{
-      display: block;
-      text-align: center;
-      padding-top: 20px;
-      color: rgb(230,87,84);
-    }
-    .chickenrecipe h3{
-      text-align: left;
-      justify-content: center;
-      color: rgb(230,87,84);
-      line-height: 1;
-    }
-    .chickenrecipe h4{
-      text-align: left;
-      color: #000000;
-    }
+ 
     .eggrecipe{
+      display: grid;
       background-color: white;
       border: 10px solid rgb(75,106,136);
       padding: 30px;
-    }
-    .eggrecipe h2{
-      text-align: center;
-      color: rgb(230,87,84);
-    }
-    .eggrecipe h3{
-      text-align: left;
-      justify-content: center;
-      color: rgb(230,87,84);
-      line-height: 1;
-    }
-    .eggrecipe h4{
-      text-align: left;
-      color: #000000;
+      grid-column: 3/span 1;
     }
 
+
     .shrimprecipe{
+      display: grid;
       background-color: white;
       border: 10px solid rgb(75,106,136); 
       padding: 30px;
+      grid-column: 4 / span 1;
     }
-    .shrimprecipe h2{
-      text-align: center;
-      color: rgb(230,87,84);
-    }
-    .shrimprecipe h3{
-      text-align: left;
-      justify-content: center;
-      color: rgb(230,87,84);
-      line-height: 1;
-    }
-    .shrimprecipe h4{
-      text-align: left;
-      color: #000000;
-    }
+
+  
   
   /*Recipes End*/ 
 
@@ -450,59 +420,7 @@
   /*Advice End*/ 
 
   /*RECIPES START*/ 
-  *{
-    box-sizing:border-box;
-  }
-  .container{
-    width:1000px;
-    margin:0 auto;
-    display:flex;
-    justify-content: space-between;
-    background-color: transparent;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    border: 1px solid #f1f1f1;
-  }
-  
-  /* This container is needed to position the front and back side */
-  .innercontainer {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .container:hover .innercontainer {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .frontface, .backface {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .frontface {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .backface {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-  }
-
-  .frontface img{
-    margin: 2px;
-    max-width: 10em;
-  }
+ 
 
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
   @media screen and (max-width: 500px) {
