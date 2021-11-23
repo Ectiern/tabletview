@@ -167,12 +167,13 @@
     padding-top: 1em;
   }
 
-  h2{
+  .abouttext, .gallerytext h2{
     font-size: 1.5em;
     text-align:center;
     line-height: 2;
-
+    color: white;
     }
+  
 
    body{
    margin: 0;
@@ -249,21 +250,26 @@
  
       color: rgb(75,106,136);
       display: grid;
-      align-items: center;
       grid-row-gap: .5em;
       grid-column-gap: .5em;
       grid-template-columns: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
+      margin-top: .5em;
       
     }
 
-    h3{
-    display: block;
-    padding: 0 20px;
-    justify-content: left;
-    font-size: 1.0em;
-    line-height: 2;
+    ul {
+      padding-left: .5em;
+      font-size: 1.5rem;
     }
+
+    li {
+      line-height: 1;
+    }
+
+    
+
+  
 
     .recipe{
       justify-content: left;
@@ -282,13 +288,12 @@
       background-color: white;
       border: 10px solid rgb(75,106,136);
       padding: 20px;
-      
     }
     .salmonrecipe, .chickenrecipe, .eggrecipe, .shrimprecipe, h2{
       display: block;
-      padding-top: 20;
       text-align: center;
       color: rgb(230,87,84);
+      line-height: 1.2;
     }
     .salmonrecipe, .chickenrecipe, .eggrecipe, .shrimprecipe, h3{
       text-align: left;
@@ -309,17 +314,15 @@
       display: grid;
       background-color: white;
       border: 10px solid rgb(75,106,136);
-      padding: 30px;
-      grid-column: 3/span 1;
+      padding: 20px;
     }
 
 
     .shrimprecipe{
       display: grid;
       background-color: white;
-      border: 10px solid rgb(75,106,136); 
-      padding: 30px;
-      grid-column: 4 / span 1;
+      border: 10px solid rgb(75,106,136);
+      padding: 20px;
     }
 
   
@@ -386,6 +389,17 @@
     content: "";
     display: table;
     clear: both;
+  }
+
+  footer{
+    position: fixed;
+    font-weight: bold;
+    font-size: 15px;
+    bottom: 0;
+    color: black;
+    width: 100%;
+    margin: 1em;
+
   }
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
