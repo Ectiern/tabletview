@@ -386,13 +386,14 @@
   
   /* Style the container */
   .formcontainer {
-    border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: rgb(75,106,136);
     padding: 20px;
+    margin: 20px;
+    border: 2px white solid;
   }
   
   /* Floating column for labels: 25% width */
-  .col-25 {
+  .formquestion {
     float: left;
     width: 25%;
     margin-top: 6px;
