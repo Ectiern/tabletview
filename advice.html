@@ -8,11 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ad4cef0af0.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/JPG" href="images/monster.JPG">
-    <title>Baking With Liz</title>
+    <link rel="shortcut icon" type="icon" href="images/favicon.ico">
+    <title>Baking Advice</title>
   </head>
   <body>
     <header>
+      <a class="skip-main" href="#main">Skip to main content</a>
         <div class="navbar">
             <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
             <a href="gallery.html"><i class="fa fa-fw fa-camera"></i> Photo Gallery</a>
@@ -21,7 +22,7 @@
       </div>
       <h1>Baking Advice</h1>
     </header>
-    <main>
+    <main class="advicepage">
     <div class="advice" id="adviceheader">
         <h2>How To Get In The Kitchen!</h2>
     </div>
@@ -48,7 +49,50 @@
         <ul>
           <li>Most important above all, though, is to HAVE FUN! Experiment with new things, try new cuisines, see what you can do! Life wouldn't be the same if we all stuck to our comfort zone of Trader-Joes freezer food. Yes, sometimes recipes flop, but that's okay! Keep going and see what you can accomplish. Eventually, you may not even need a recipe!</li>
         </ul>
-      </div>
+    </div>
+    <div class="formcontainer">
+      <form action="action_page.php">
+        <div class="row">
+          <div class="formquestion">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="formanswer">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="formquestion">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="formanswer">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="formquestion">
+            <label for="country">Country</label>
+          </div>
+          <div class="formanswer">
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
   <footer>
     <p> Liz T ©2021</p>
   </footer>
