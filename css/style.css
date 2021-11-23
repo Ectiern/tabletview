@@ -68,41 +68,8 @@
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
    }
-   
-   /*.gallery{
-    display: grid;
-    grid-template-columns:auto;
-    grid-gap: 10px;
-    justify-items: center;
-    margin: 0;
-    padding: 0;
-  }*/
-  
-   /*
-  .gallery-frame {
-    padding: 5px;
-    font-size: 5px;
-    text-align: center;
-    background-color: #333;
-    color: #d9d9d9;
-  }*/
-  
-  /* The Images */
-  /*.gallery-img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    transition: opacity 0.25s ease-in-out;
-  }*/
 
-  /*.gallery-img{
-    width: 100%;
-  }
   
-  .gallery-img:hover {
-    opacity: .7;
-  }
-  */
   .gallery .item {
     position: relative;
     overflow: hidden;
@@ -167,12 +134,20 @@
     padding-top: 1em;
   }
 
-  .abouttext, .gallerytext h2{
+  .abouttext h2{
     font-size: 1.5em;
     text-align:center;
     line-height: 2;
     color: white;
     }
+  .gallerytext h2{
+    font-size: 1.5em;
+    text-align:center;
+    line-height: 2;
+    color: white;
+
+    }
+  
   
 
    body{
@@ -199,9 +174,13 @@
      margin-right: 5px;
      margin-left: 5px;
      border: 5px solid white;
+     background: rgb(52,73,94);
      
     }
-  .gallerytext, .aboutmecontainer1{
+    .abouttext p{
+      color: white;
+    }
+  .gallerytext {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -212,7 +191,7 @@
     margin-right: 5px;
     margin-left: 5px;
     border: 5px solid white;
-    background: rgb(169,169,169);
+    background: rgb(52,73,94);
   }
 
   /*.aboutmecontainer2{
@@ -243,7 +222,9 @@
       max-width: 10em;
     }
 
-  
+  .gallerytext p{
+    color: white;
+  }
     /*Recipes Start*/ 
 
     .recipecontainer{
@@ -289,13 +270,13 @@
       border: 10px solid rgb(75,106,136);
       padding: 20px;
     }
-    .salmonrecipe, .chickenrecipe, .eggrecipe, .shrimprecipe, h2{
+    .salmonrecipe .chickenrecipe .eggrecipe .shrimprecipe h2{
       display: block;
       text-align: center;
       color: rgb(230,87,84);
       line-height: 1.2;
     }
-    .salmonrecipe, .chickenrecipe, .eggrecipe, .shrimprecipe, h3{
+    .salmonrecipe .chickenrecipe .eggrecipe .shrimprecipe h3{
       text-align: left;
       color: rgb(230,87,84);
     }
@@ -338,17 +319,19 @@
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+    color: black;
   }
   
   /* Style the label to display next to the inputs */
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+    color:white;
   }
   
   /* Style the submit button */
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: black;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -370,6 +353,7 @@
     float: left;
     width: 25%;
     margin-top: 6px;
+    color:white;
   }
   
   /* Floating column for inputs: 75% width */
@@ -398,8 +382,7 @@
     bottom: 0;
     color: black;
     width: 100%;
-    margin: 1em;
-
+  
   }
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
