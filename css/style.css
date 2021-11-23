@@ -1,439 +1,425 @@
 /* Style the navigation bar */
 .navbar {
-    width: 100%;
-    background-color: rgb(75,106,136);
-    overflow: auto;
-  }
-  
-  /* Navbar links */
-  .navbar a {
-    text-align: center;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-  }
-  
-  /* Navbar links on mouse-over */
-  .navbar a:hover {
-    background-color: #000000;
-  }
-  
-  /* Current/active navbar link */
-  .active {
-    background-color: rgb(83,47,97);
-  }
+  width: 100%;
+  background-color: rgb(75,106,136);
+  overflow: auto;
+}
 
-  a.skip-main {
-    right:-999px;
-    position:absolute;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-    z-index:-999;
-  }
-  a.skip-main:focus, a.skip-main:active {
-      color: #fff;
-      background-color:#000;
-      right: auto;
-      top: auto;
-      width: 40%;
-      height: auto;
-      overflow:auto;
-      padding:5px;
-      border:2px solid purple;
-      text-align:center;
-      font-size:1.2em;
-      z-index:999;
-  }
+/* Navbar links */
+.navbar a {
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
 
-   header{
-    display: block;
-    position: relative;
-    background-image: url('../images/headerpicture.JPG');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 60px;
-    text-align: center;
-    /*background: #1abc9c;*/
-    color: white;
-    font-size: 30px;
-   }
-   .gallery{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
-   }
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000000;
+}
 
-  
-  .gallery .item {
-    position: relative;
-    overflow: hidden;
-    border-color: white;
-    border-image: none;
-    border-style: solid;
-    border-width: 10px;
-    width: 200px;
-    height: 200px;
-  }
+/* Current/active navbar link */
+.active {
+  background-color: rgb(83,47,97);
+}
 
-  
-  .gallery-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .gallery .item img {
-    /*vertical-align: middle;*/
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .gallery .caption {
-    margin: 0;
-    padding: 1em;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    max-height: 100%;
-    overflow: auto;
-    box-sizing: border-box;
-    transition: transform .5s;
-    transform: translateY(100%);
-    background: rgba(0, 0, 0, .7);
-    color: rgb(255, 255, 255);
-  }
-  
-  .gallery .item:hover .caption {
-    transform: translateY(0%);
-  }
-  *{
-    box-sizing: border-box;
-  }
-
-  .block{
-    display: block;
-    border: 2rem black solid;
-   }
-
-  .gallerytextcontainer{
-    display: grid;
-    
-  }
-  h1{
-    font-size: 2em;
-    text-align: center;
-    padding-top: 1em;
-  }
-
-  .abouttext h2{
-    font-size: 1.5em;
+a.skip-main {
+  right:-999px;
+  position:absolute;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    right: auto;
+    top: auto;
+    width: 40%;
+    height: auto;
+    overflow:auto;
+    padding:5px;
+    border:2px solid purple;
     text-align:center;
-    line-height: 2;
-    color: white;
-    }
-  .gallerytext h2{
-    font-size: 1.5em;
-    text-align:center;
-    line-height: 2;
-    color: white;
+    font-size:1.2em;
+    z-index:999;
+}
 
-    }
-  
-  
+ header{
+  display: block;
+  position: relative;
+  background-image: url('../images/headerpicture.JPG');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 60px;
+  text-align: center;
+  /*background: #1abc9c;*/
+  color: white;
+  font-size: 30px;
+ }
+ .gallery{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+ }
 
-   body{
-   margin: 0;
-   padding: 0;
-   font-size: 1.4em; /* test for this! Make all sizes em or rem */
+
+.gallery .item {
+  position: relative;
+  overflow: hidden;
+  border-color: white;
+  border-image: none;
+  border-style: solid;
+  border-width: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+
+.gallery-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery .item img {
+  /*vertical-align: middle;*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery .caption {
+  margin: 0;
+  padding: 1em;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  transition: transform .5s;
+  transform: translateY(100%);
+  background: rgba(0, 0, 0, .7);
+  color: rgb(255, 255, 255);
+}
+
+.gallery .item:hover .caption {
+  transform: translateY(0%);
+}
+*{
+  box-sizing: border-box;
+}
+
+.block{
+  display: block;
+  border: 2rem black solid;
+ }
+
+.gallerytextcontainer{
+  display: grid;
+  
+}
+h1{
+  font-size: 2em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.abouttext h2{
+  font-size: 1.5em;
+  text-align:center;
+  line-height: 2;
+  color: white;
+  }
+.gallerytext h2{
+  font-size: 1.5em;
+  text-align:center;
+  line-height: 2;
+  color: white;
+
+  }
+
+
+
+ body{
+ margin: 0;
+ padding: 0;
+ font-size: 1.4em; /* test for this! Make all sizes em or rem */
+ 
+ background-color: rgb(179,129,179);
+ }
+
+ p {
+  padding: 0 20px;
+  text-align: justify center;
+  font-size: 1em;
+ }
+ .abouttext{
+   text-align: center;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-right: 5px;
+   margin-left: 5px;
+   border: 5px solid white;
+   background: rgb(52,73,94);
    
-   background-color: rgb(179,129,179);
-   }
-
-   p {
-    padding: 0 20px;
-    text-align: justify center;
-    font-size: 1em;
-   }
-   .abouttext{
-     text-align: center;
-     padding-top: 30px;
-     padding-bottom: 30px;
-     padding-left: 15px;
-     padding-right: 15px;
-     margin-top: 30px;
-     margin-bottom: 30px;
-     margin-right: 5px;
-     margin-left: 5px;
-     border: 5px solid white;
-     background: rgb(52,73,94);
-     
-    }
-    .abouttext p{
-      color: white;
-    }
-  .gallerytext {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 55px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-    margin-left: 5px;
-    border: 5px solid white;
-    background: rgb(52,73,94);
   }
-
-  /*.aboutmecontainer2{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items:center;
-    justify-content: space-evenly;
-    max-height: 30em;
-    padding: 5px;
-  }
-
-  .aboutmecontainer2 img{
-      margin: 5px;
-      max-width: 10em;
-      
-  }*/
-
-  .aboutmecontainer2 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-    justify-content: space-between;
-    max-height: 30em;
-    }
-  .aboutmecontainer2 img{
-      margin: 2px;
-      max-width: 10em;
-    }
-
-  .gallerytext p{
+  .abouttext p{
     color: white;
   }
-    /*Recipes Start*/ 
+.gallerytext {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 55px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 5px solid white;
+  background: rgb(52,73,94);
+}
 
-    .recipecontainer{
- 
-      color: rgb(75,106,136);
-      display: grid;
-      grid-row-gap: .5em;
-      grid-column-gap: .5em;
-      grid-template-columns: auto auto auto auto;
-      grid-template-rows: auto auto auto auto;
-      margin-top: .5em;
-      
-    }
 
-    ul {
-      padding-left: .5em;
-      font-size: 1.5rem;
-    }
+.aboutmecontainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: space-between;
+  max-height: 30em;
+  }
+.aboutmecontainer2 img{
+    margin: 2px;
+    max-width: 10em;
+  }
 
-    li {
-      line-height: 1;
-    }
+.gallerytext p{
+  color: white;
+}
+  /*Recipes Start*/ 
 
+  .recipecontainer{
+
+    color: rgb(75,106,136);
+    display: grid;
+    grid-row-gap: .5em;
+    grid-column-gap: .5em;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    margin-top: .5em;
     
+  }
 
-  
-
-    .recipe{
-      justify-content: left;
-
-    }
-    .recipecontainer img{
-      display: grid;
-      margin-left: auto;
-      margin-right: auto;
-      width: 12em;
-      justify-content: center;
-    
-     }
-     .salmonrecipe {
-      display: grid;
-      background-color: white;
-      border: 10px solid rgb(75,106,136);
-      padding: 20px;
-    }
-    .salmonrecipe .chickenrecipe .eggrecipe .shrimprecipe h2{
-      display: block;
-      text-align: center;
-      color: rgb(230,87,84);
-      line-height: 1.2;
-    }
-    .salmonrecipe .chickenrecipe .eggrecipe .shrimprecipe h3{
-      text-align: left;
-      color: rgb(230,87,84);
-    }
-    .salmonrecipe, .chickenrecipe, .eggrecipe, .shrimprecipe, h4{
-      text-align: left;
-      color: #000000;
-    }
-    .chickenrecipe{
-      display: grid;
-      background-color: white;
-      border: 10px solid rgb(75,106,136);
-      padding: 20px;
-    }
  
-    .eggrecipe{
-      display: grid;
-      background-color: white;
-      border: 10px solid rgb(75,106,136);
-      padding: 20px;
-    }
-
-
-    .shrimprecipe{
-      display: grid;
-      background-color: white;
-      border: 10px solid rgb(75,106,136);
-      padding: 20px;
-    }
-
-  
-  
-  /*Recipes End*/ 
-
-  /*Advice Start*/ 
-
-  input[type=text], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-    color: black;
+  ul {
+    padding-left: .5em;
+    font-size: 1.5rem;
   }
-  
-  /* Style the label to display next to the inputs */
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-    color:white;
+
+  li {
+    line-height: 1;
   }
+
   
-  /* Style the submit button */
-  input[type=submit] {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
+
+
+
+  .recipe{
+    justify-content: left;
+
   }
+  .recipecontainer img{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    justify-content: center;
   
-  /* Style the container */
-  .formcontainer {
-    background-color: rgb(75,106,136);
+   }
+   .salmonrecipe {
+    display: grid;
+    background-color: white;
+    border: 10px solid rgb(75,106,136);
     padding: 20px;
+  }
+  .salmonrecipe .chickenrecipe .eggrecipe .shrimprecipe h2{
+    display: block;
+    text-align: center;
+    color: rgb(230,87,84);
+    line-height: 1.2;
+  }
+  .salmonrecipe .chickenrecipe .eggrecipe .shrimprecipe h3{
+    text-align: left;
+    color: rgb(230,87,84);
+  }
+  .salmonrecipe, .chickenrecipe, .eggrecipe, .shrimprecipe, h4{
+    text-align: left;
+    color: #000000;
+  }
+  .chickenrecipe{
+    display: grid;
+    background-color: white;
+    border: 10px solid rgb(75,106,136);
+    padding: 20px;
+  }
+
+  .eggrecipe{
+    display: grid;
+    background-color: white;
+    border: 10px solid rgb(75,106,136);
+    padding: 20px;
+  }
+
+
+  .shrimprecipe{
+    display: grid;
+    background-color: white;
+    border: 10px solid rgb(75,106,136);
+    padding: 20px;
+  }
+
+
+
+/*Recipes End*/ 
+
+/*Advice Start*/ 
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  color: black;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color:white;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.formcontainer {
+  background-color: rgb(75,106,136);
+  padding: 20px;
+  margin: 20px;
+  border: 2px white solid;
+}
+
+/* Floating column for labels: 25% width */
+.formquestion {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  color:white;
+}
+
+/* Floating column for inputs: 75% width */
+.formanswer {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer{
+  position: fixed;
+  font-weight: bold;
+  font-size: 15px;
+  bottom: 0;
+  color: black;
+  width: 100%;
+
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+  #adviceheader h2{
+    text-align: center;
+    color: white;
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   }
+
+   .advice{
+    color: white;
+    background-color: rgb(75,106,136) ;
+    text-align: left;
+    padding-left: 35px;
     margin: 20px;
     border: 2px white solid;
+   }
+    .advice h2{
+      margin-bottom: 5px;
+      margin-top: 15px;
+    }
+/*Advice End*/ 
+
+/*RECIPES START*/ 
+
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
   }
-  
-  /* Floating column for labels: 25% width */
-  .formquestion {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-    color:white;
-  }
-  
-  /* Floating column for inputs: 75% width */
-  .formanswer {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: stretch;
-    align-items: stretch;
+}
+@media screen and (max-width: 600px) {
+  .column {
     width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+}
 
-  footer{
-    position: fixed;
-    font-weight: bold;
-    font-size: 15px;
-    bottom: 0;
-    color: black;
-    width: 100%;
-  
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
+@media only screen and (min-width: 768px){
 
-    #adviceheader h2{
-      text-align: center;
-      color: white;
-      font-family: 'Tangerine', cursive;
-      font-size: 30px;
-      margin-bottom: 20px;
-      margin-top: 20px;
-     }
-
-     .advice{
-      color: white;
-      background-color: rgb(75,106,136) ;
-      text-align: left;
-      padding-left: 35px;
-      margin: 20px;
-      border: 2px white solid;
-     }
-      .advice h2{
-        margin-bottom: 5px;
-        margin-top: 15px;
-      }
-  /*Advice End*/ 
-
-  /*RECIPES START*/ 
- 
-
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-
-  @media only screen and (min-width: 768px){
-
-  }
+}
